@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import {
   getProductsByCount,
@@ -25,10 +26,10 @@ const Shop = () => {
   const [ok, setOk] = useState(false);
   const [categories, setCategories] = useState([]);
   const [categoryIds, setCategoryIds] = useState([]);
-  const [star, setStar] = useState("");
+  const [, setStar] = useState("");
   const [subs, setSubs] = useState([]);
-  const [sub, setSub] = useState("");
-  const [brands, setBrands] = useState([
+  const [, setSub] = useState("");
+  const [brands] = useState([
     "Apple",
     "Samsung",
     "Microsoft",
@@ -36,13 +37,7 @@ const Shop = () => {
     "ASUS",
   ]);
   const [brand, setBrand] = useState("");
-  const [colors, setColors] = useState([
-    "Black",
-    "Brown",
-    "Silver",
-    "White",
-    "Blue",
-  ]);
+  const [colors] = useState(["Black", "Brown", "Silver", "White", "Blue"]);
   const [color, setColor] = useState("");
   const [shipping, setShipping] = useState("");
 

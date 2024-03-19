@@ -98,6 +98,7 @@ export const SingleProduct = ({ product, onStarClick, star }) => {
               />{" "}
               <br /> Add to Cart
             </Tooltip>,
+            // eslint-disable-next-line
             <a onClick={handleAddToWishlist}>
               <HeartOutlined className="text-info" /> <br /> Add to Wishlist
             </a>,
